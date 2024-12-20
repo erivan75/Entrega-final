@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(224, 245, 202);
+}
+
+a {
+    margin-top: 20px;
+    padding: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+
+header img {
+    width: 120px;
+    margin: 10px;
+    height: 120px;
+}
+
+header h1 {
+    margin: auto;
+    text-align-last: center;
+    font-size: 60px;
+
+
+}
+
+.vast-shadow-regular {
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h5 {
+    margin: 15px;
+}
+
+/*-----------------nav cambiado a boostrap--------------*/
+nav {
+    grid-area: nav;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.container-fluid {
+    background-color: black;
+    color: rgb(196, 235, 154);
+    height: 85px;
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(196, 235, 154);
+
+}
+
+.navbar {
+    padding: 0%;
+}
+
+.dropdown-item1 {
+    color: rgb(196, 235, 154);
+}
+
+.nav-link {
+    color: rgb(196, 235, 154);
+}
+
+.nav-link:hover {
+    border-radius: 5px;
+    background-color: rgb(181, 226, 132);
+}
+
+#inicio {
+    color: rgb(196, 235, 154);
+}
+
+#inicio:hover {
+    color: black;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(190, 243, 134);
+    color: rgb(95, 122, 66);
+    margin: 0 10px 10px 10px;
+    font-size: xx-small;
+
+}
+
+.btn:hover {
+    background-color: rgb(145, 230, 54);
+    color: black;
+}
+
+.d-flex {
+    width: 30%;
+    height: 60%;
+}
+
+/*--------------main---------------------------------------------*/
+main {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* ---------------------------------html INDEX-----------------------*/
+
+/*---animada--*/
+.img1 {
+    width: 30%;
+    margin: 10px 5px 10px;
+}
+
+#imag-promo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    animation-name: translate3d;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes translate3d {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+/*----------- catalogo-----------*/
+
+.catalogo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.catalogo img {
+    margin-bottom: 5px;
+    width: 50%;
+    border-radius: 10px;
+    padding: 0;
+}
+
+#Inicio {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    background-image: url("../imagenes/imagen\ de\ fondo.png");
+    background-size: 100% 100%;
+
+}
+
+
+/*---------------------------------productos--------------------*/
+/*---------- carrousel-------------*/
+
+.carousel-item img {
+    height: 250px;
+    margin-top: 20px;
+}
+
+.carousel-caption h5 {
+    margin-bottom: 5%;
+    color: rgb(58, 143, 36);
+    font-size: xx-large;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 480;
+    font-style: normal;
+
+}
+
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*-------Productos cards---------*/
+.card:hover {
+    box-shadow: 0 0 10px;
+    scale: 1.05;
+
+}
+
+.card-body h5 {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.d-flex {
+    width: 100%;
+    text-align: center;
+}
+
+.card-body {
+    padding: 0 10px;
+    height: 40%;
+}
+
+.mt-5 {
+    margin: 5% 10%;
+}
+
+.card-text {
+    font-size: large;
+    text-align: center;
+    height: 15%;
+}
+
+.card-img-top {
+    height: 50%;
+    padding: 5%;
+}
+
+h2 {
+    text-align: center;
+    margin: 35px 20px 20px 10px;
+}
+
+.card-body a {
+    margin-top: 0;
+    margin-left: 35%;
+    font-size: small;
+}
+
+.card-body a:hover {
+    color: rgb(5, 5, 5);
+    background-color: rgb(133, 212, 243);
+}
+
+.card-text {
+    font-size: small;
+    text-align: center;
+    height: 15%;
+}
+
+.card-img-top {
+    height: 50%;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin: 35px 20px 20px 10px;
+}
+
+
+/*----- reseñas ------*/
+#reseñas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+
+.opinion {
+    width: 90%;
+    margin: 5% 2% 0 0;
+    border: 2px solid rgb(206, 199, 199);
+    border: 2px solid rgb(206, 199, 199);
+    border-radius: 20px;
+    background-color: rgb(234, 245, 226);
+    border: 2px solid rgb(206, 199, 199);
+    border-radius: 20px;
+    background-color: rgb(234, 245, 226);
+}
+
+.opinion img {
+    width: 20%;
+    margin: 2% 5%;
+
+}
+
+.opinion h5,
+p {
+    margin: 2% 10%;
+    font-size: xx-small;
+}
+
+.opinion i {
+    color: rgb(168, 209, 107);
+
+}
+
+/* ---- promociones----*/
+
+
+#promociones {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+
+}
+
+#promociones img {
+    width: 10%;
+    height: 20%;
+}
+
+.promocion {
+    text-align: center;
+    margin: 2% 0;
+}
+
+/*  ----------medios de pago--------*/
+#pago img {
+    margin: 2% 0 5% 30%;
+    width: 40%;
+}
+
+
+/*-------------------------------contacto--------------------------*/
+/*-----------nosotros----------*/
+
+
+#presentacion {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    padding: 0 5% 2% 5%;
+}
+
+.texto p {
+    display: inline;
+    margin: 0;
+    font-size: small;
+}
+
+#presentacion img {
+    width: 95%;
+    height: 80%;
+    margin: 7% 3% 0 5%;
+}
+
+/*-------tabla horario----------*/
+#horarios p {
+    font-size: small;
+    margin: 0;
+}
+
+.horario {
+    display: none;
+}
+
+#horarios td {
+    border: 2px solid rgb(206, 199, 199);
+    font-size: small;
+}
+
+#horarios th {
+    width: 1%;
+    border: 2px solid rgb(206, 199, 199);
+    font-size: small;
+}
+
+/*----ubicacion y mapa-----*/
+#ubicacion p {
+    margin: 0;
+    font-size: small;
+}
+
+/*-------formulario contacto-----*/
+#formulario {
+    width: 450px;
+    height: 350px;
+    margin: 0 15% 0 10%;
+    border: 5px solid rgb(206, 199, 199);
+    border-radius: 20px;
+}
+
+::placeholder {
+    font-size: x-small;
+}
+
+form {
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(109, 106, 106);
+}
+
+input {
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+#formulario form button {
+    padding: 1px;
+    background-color: rgb(243, 236, 236);
+    border-radius: 5px;
+    font-size: small;
+}
+
+#formulario button:hover {
+    background-color: rgb(224, 245, 202);
+    box-shadow: 0 0 5px;
+    scale: 1.05;
+}
+
+#email {
+    width: 180px;
+}
+
+label {
+    font-size: x-small;
+}
+
+#presentacion h4 {
+    text-align: center;
+    margin: 5% 0;
+    color: rgb(139, 135, 135);
+    font-size: large;
+}
+
+.mapa {
+    width: "80%";
+    height: "50%";
+}
+
+@media (max-width: 1030px) {
+    .texto p {
+        display: inline;
+        margin: 0;
+        font-size: small;
+    }
+
+    #horarios td {
+        border: 2px solid rgb(206, 199, 199);
+        font-size: x-small;
+    }
+
+    #horarios th {
+        width: 1%;
+        border: 2px solid rgb(206, 199, 199);
+        font-size: x-small;
+    }
+
+    #ubicacion p {
+        margin: 0;
+        font-size: x-small;
+    }
+
+    #presentacion img {
+        width: 95%;
+        height: 70%;
+        margin: 7% 3% 0 5%;
+    }
+
+    #formulario {
+        width: 380px;
+        height: 300px;
+        margin: 2% 10%;
+        border: 2px solid rgb(206, 199, 199);
+        border-radius: 20px;
+    }
+
+    #horarios p {
+        margin: 0;
+        font-size: x-small;
+    }
+
+    form {
+        margin: 10%;
+        text-align: center;
+        border-radius: 2px;
+        color: rgb(109, 106, 106);
+    }
+
+    input {
+        width: 180px;
+        margin-bottom: 2px;
+        border-radius: 5px;
+    }
+
+    label {
+        font-size: small;
+    }
+
+    textarea {
+        width: 180px;
+        height: 40px;
+        border-radius: 5px;
+
+    }
+
+    form button {
+        font-size: x-small;
+        background-color: rgb(243, 236, 236);
+        border-radius: 5px;
+
+    }
+
+    form button:hover {
+        background-color: rgb(224, 245, 202);
+    }
+
+    #email {
+        width: 95px;
+    }
+
+    #presentacion h4 {
+        text-align: center;
+        margin: 5% 0 0 0;
+        color: rgb(139, 135, 135);
+        font-size: small;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .horario {
+        display: block;
+        font-size: small;
+    }
+
+    #horarios table {
+        display: none;
+    }
+
+    #formulario {
+        width: 300px;
+        height: 300px;
+        margin: 2% 10%;
+        border: 2px solid rgb(206, 199, 199);
+        border-radius: 20px;
+    }
+
+
+    form {
+        margin: 10%;
+        text-align: center;
+        border-radius: 2px;
+        color: rgb(109, 106, 106);
+    }
+
+    input {
+        width: 130px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+
+    textarea {
+        width: 130px;
+        border-radius: 5px;
+
+    }
+
+    #formulario form button {
+        font-size: x-small;
+        background-color: rgb(243, 236, 236);
+        border-radius: 5px;
+
+    }
+
+    form button:hover {
+        background-color: rgb(224, 245, 202);
+    }
+
+    #email {
+        width: 95px;
+    }
+
+    #presentacion h4 {
+        text-align: center;
+        margin: 5% 0 0 0;
+        color: rgb(139, 135, 135);
+        font-size: small;
+
+    }
+}
+
+
+/*----------carriito html------------------------------*/
+.boton {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 5% 10% 10% 50%;
+    font-size: xx-small;
+}
+
+.boton button {
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+.boton button:hover {
+    background-color: rgb(224, 245, 202);
+    box-shadow: 0 0 5px;
+    scale: 1.05;
+}
+
+.total {
+    display: flex;
+    margin: 5% 0 0 65%;
+}
+
+#carrito h3 {
+    margin: 20px;
+    text-align: center;
+}
+
+.tabla {
+    width: 80%;
+    height: 40%;
+    margin: 30px 10% 30px 10%;
+}
+
+/* --------------------------------- footer -------------------------------*/
+footer {
+    grid-area: footer;
+
+}
+
+#pie {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224, 245, 202);
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    margin: 5px 50px;
+    display: flex;
+    width: 50%;
+    font-size: xx-large;
+}
+
+footer .vast-shadow-regular {
+    font-size: 40px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.fa-brands {
+    font-size: large;
+    margin-left: 25px;
+    padding: 5px;
+
+}
+
+.redes {
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(203, 250, 155);
+    padding: 5px;
+}
+
+footer img {
+    height: 30px;
+}
+
+footer h4,
+h5 {
+    padding-right: 30px;
+    color: black;
+    font-size: small;
+    text-align: left;
+    margin: 5px 0;
+}
+
+footer div {
+    margin: 5px;
+    padding: 5px;
+}
